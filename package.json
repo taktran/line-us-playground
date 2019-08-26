@@ -8,6 +8,7 @@
     "url": "git+https://github.com/taktran/line-us-playground.git"
   },
   "scripts": {
+    "start:repl": "node bin/repl",
     "lint": "eslint *.js",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
     "start": "node index",
@@ -23,5 +24,9 @@
     "eslint-plugin-no-only-tests": "^2.3.1",
     "eslint-plugin-react": "^7.13.0",
     "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "@beardicus/line-us": "^2.1.0",
+    "dotenv": "^8.1.0"
   }
 }
