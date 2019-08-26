@@ -53,6 +53,14 @@ async function printDebug(bot) {
 async function main() {
   const bot = new LineUs(options);
 
+  bot.on('coordinates', coords => {
+    console.log('coordinates', coords);
+  });
+
+  bot.on('error', error => {
+    console.error('ERROR', error);
+  });
+
   try {
     await printDebug(bot);
     await drawOutline(bot);
